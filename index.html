@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WX</title>
+    <link rel="icon" href="img/thmb.png">
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="/aos/dist/aos.css"/>
+</head>
+
+<body>
+
+    <div id="fullpage">
+        <div class="section" id="barba-wrapper">
+            
+  <div class="barba-container" data-namespace="grid">
+      <a class="intro-thumb" href="page2.html">
+          <div class="full" style="background-image: url(img/safd.png);"></div>
+        </a>
+      
+    
+  </div>
+</div>
+        <div class="section"><img src="img/safd.png"></div>
+        <div class="section"><img src="img/safd.png"></div>
+        <div class="section"><img src="img/safd.png"></div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+$('document').ready(function(){
+     Barba.Pjax.start();
+});</script>
+
+    <script src="js/barba.min.js"></script>
+    <script src="js/grid.js"></script>
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+            //Navigation
+            menu: '#menu',
+            lockAnchors: false,
+            anchors: ['firstPage', 'secondPage'],
+            navigation: false,
+            navigationPosition: 'right',
+            navigationTooltips: ['firstSlide', 'secondSlide'],
+            showActiveTooltip: false,
+            slidesNavigation: false,
+            slidesNavPosition: 'bottom',
+
+            //Scrolling
+            css3: true,
+            scrollingSpeed: 700,
+            autoScrolling: true,
+            fitToSection: true,
+            fitToSectionDelay: 1000,
+            scrollBar: false,
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            continuousVertical: false,
+            continuousHorizontal: false,
+            scrollHorizontally: false,
+            interlockedSlides: false,
+            dragAndMove: false,
+            offsetSections: false,
+            resetSliders: false,
+            fadingEffect: false,
+            normalScrollElements: '#element1, .element2',
+            scrollOverflow: false,
+            scrollOverflowReset: false,
+            scrollOverflowOptions: null,
+            touchSensitivity: 15,
+            normalScrollElementTouchThreshold: 5,
+            bigSectionsDestination: null,
+
+            //Accessibility
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: true,
+
+            //Design
+            controlArrows: true,
+            verticalCentered: true,
+            sectionsColor: ['#ccc', '#fff'],
+            paddingTop: '3em',
+            paddingBottom: '10px',
+            fixedElements: '#header, .footer',
+            responsiveWidth: 0,
+            responsiveHeight: 0,
+            responsiveSlides: false,
+            parallax: false,
+            parallaxOptions: {
+                type: 'reveal',
+                percentage: 62,
+                property: 'translate'
+            },
+
+            //Custom selectors
+            sectionSelector: '.section',
+            slideSelector: '.slide',
+
+            lazyLoading: true,
+
+            //events
+            onLeave: function(origin, destination, direction) {},
+            afterLoad: function(origin, destination, direction) {},
+            afterRender: function() {},
+            afterResize: function(width, height) {},
+            afterResponsive: function(isResponsive) {},
+            afterSlideLoad: function(section, origin, destination, direction) {},
+            onSlideLeave: function(section, origin, destination, direction) {}
+        });
+
+    </script>
+    <script>
+$('document').ready(function(){
+     Barba.Pjax.start();
+});</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
+
+</body>
+
+</html>
