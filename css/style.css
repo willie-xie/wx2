@@ -5,6 +5,7 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
+ 
 }
 
 body {
@@ -42,4 +43,26 @@ a.back {
   right: 0;
   bottom: 0;
   left: 0;
+}
+.section{
+
+}
+.project, .project2{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(10, auto);
+}
+
+.projectthmb{
+    grid-column: 2 / 10;
+    grid-row: 3 / 9;
+    background-color: white;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+.projecttext, .projecttext2{
+    grid-column: 2 / 8;
+    grid-row: 8 / 10;
+    background-color: rgba(0,0,0,0.6);
 }

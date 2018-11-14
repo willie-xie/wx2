@@ -9,18 +9,40 @@
     <!-- CSS FILES -->
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="/aos/dist/aos.css"/>
+    <link rel="stylesheet" href="css/aos.css" />
 </head>
 
 <body>
 
     <div id="fullpage">
-        <div class="section" >
-            
-  <img src="img/2_2.jpg" style="height: 55vh; width: 80%;margin: 0 auto">
-</div>
-        <div class="section"><img src="img/2_2.jpg" style="height: 55vh; width: 80%;margin: 0 auto"></div>
-        <div class="section"><img src="img/2_2.jpg" style="height: 55vh; width: 80%;margin: 0 auto"></div>
+        <div class="section active">
+            <div class="project">
+                <div class="projectthmb">
+
+                </div>
+                <div class="projecttext" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="section">
+            <div class="project2">
+                <div class="projectthmb">
+
+                </div>
+                <div class="projecttext"></div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="project">
+                <div class="projectthmb">
+
+                </div>
+            </div>
+        </div>
         <div class="section"><img src="img/2_2.jpg" style="height: 55vh; width: 80%;margin: 0 auto"></div>
     </div>
 
@@ -30,23 +52,23 @@
 
 
 
-    <script>
-$('document').ready(function(){
-     Barba.Pjax.start();
-});</script>
 
-
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/fullpage.min.js"></script>
     <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+AOS.init();
+    </script>
     <script>
         var myFullpage = new fullpage('#fullpage', {
             //Navigation
             menu: '#menu',
             lockAnchors: false,
-            anchors: ['p1', 'p2','p3','p4'],
+            anchors: ['p1', 'p2', 'p3', 'p4'],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['Project1', 'Project2','Project3','Project4'],
+            navigationTooltips: ['Project1', 'Project2', 'Project3', 'Project4'],
             showActiveTooltip: false,
             slidesNavigation: false,
             slidesNavPosition: 'bottom',
@@ -82,14 +104,12 @@ $('document').ready(function(){
             //Accessibility
             keyboardScrolling: true,
             animateAnchor: true,
-            recordHistory: true,
+            recordHistory: false,
 
             //Design
             controlArrows: true,
             verticalCentered: true,
             sectionsColor: [],
-            paddingTop: '3em',
-            paddingBottom: '10px',
             fixedElements: '#header, .footer',
             responsiveWidth: 0,
             responsiveHeight: 0,
@@ -116,7 +136,6 @@ $('document').ready(function(){
             afterSlideLoad: function(section, origin, destination, direction) {},
             onSlideLeave: function(section, origin, destination, direction) {}
         });
-
     </script>
 
 
