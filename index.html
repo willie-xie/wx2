@@ -15,19 +15,13 @@
 <body>
 
     <div id="fullpage">
-        <div class="section" id="barba-wrapper">
+        <div class="section" >
             
-  <div class="barba-container" data-namespace="grid">
-      <a class="intro-thumb" href="page2.html">
-          <div class="full" style="background-image: url(img/safd.png);"></div>
-        </a>
-      
-    
-  </div>
+  <img src="img/2_2.jpg" style="height: 55vh; width: 80%;margin: 0 auto">
 </div>
-        <div class="section"><img src="img/safd.png"></div>
-        <div class="section"><img src="img/safd.png"></div>
-        <div class="section"><img src="img/safd.png"></div>
+        <div class="section"><img src="img/2_2.jpg" style="height: 55vh; width: 80%;margin: 0 auto"></div>
+        <div class="section"><img src="img/2_2.jpg" style="height: 55vh; width: 80%;margin: 0 auto"></div>
+        <div class="section"><img src="img/2_2.jpg" style="height: 55vh; width: 80%;margin: 0 auto"></div>
     </div>
 
 
@@ -41,8 +35,7 @@ $('document').ready(function(){
      Barba.Pjax.start();
 });</script>
 
-    <script src="js/barba.min.js"></script>
-    <script src="js/grid.js"></script>
+
     <script type="text/javascript" src="js/fullpage.min.js"></script>
     <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
     <script>
@@ -50,10 +43,10 @@ $('document').ready(function(){
             //Navigation
             menu: '#menu',
             lockAnchors: false,
-            anchors: ['project1', 'project2'],
+            anchors: ['p1', 'p2','p3','p4'],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['firstSlide', 'secondSlide'],
+            navigationTooltips: ['Project1', 'Project2','Project3','Project4'],
             showActiveTooltip: false,
             slidesNavigation: false,
             slidesNavPosition: 'bottom',
@@ -82,7 +75,7 @@ $('document').ready(function(){
             scrollOverflow: false,
             scrollOverflowReset: false,
             scrollOverflowOptions: null,
-            touchSensitivity: 5,
+            touchSensitivity: 15,
             normalScrollElementTouchThreshold: 5,
             bigSectionsDestination: null,
 
@@ -94,7 +87,7 @@ $('document').ready(function(){
             //Design
             controlArrows: true,
             verticalCentered: true,
-            sectionsColor: ['#ccc', '#fff'],
+            sectionsColor: [],
             paddingTop: '3em',
             paddingBottom: '10px',
             fixedElements: '#header, .footer',
@@ -125,11 +118,7 @@ $('document').ready(function(){
         });
 
     </script>
-    <script>
-$('document').ready(function(){
-     Barba.Pjax.start();
-});</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
+
 
 </body>
 
