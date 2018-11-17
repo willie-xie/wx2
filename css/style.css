@@ -12,10 +12,11 @@ body {
    background-image: linear-gradient(to bottom right, #454C4E, #202020);
 }
 
-.h1{
-    font-size: 1.2em;
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em;
     font-weight: 600;
-    color: white;
+    color: #fff;
 }
 .intro-thumb {
   display: block;
@@ -87,18 +88,17 @@ position: relative;
 }
 
 .projecttext, .projecttext2{
-    width: 40%;
-    height: 100px;
+    width: 80%;
+    height: 20%;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(0,0,0,0.6);
+    bottom: 50px;
+    left: 10px;
    transition: all 2s ease-out;
     -webkit-transition: all 2s ease-out;
 }
 
 .fp-viewing-p1 .projecttext{
-    left: 100px;
+    left: 60px;
 }
 
 .fp-viewing-p1 .projectthmb{
