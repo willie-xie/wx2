@@ -57,7 +57,20 @@ position: relative;
 .projectthmb{
     grid-column: 2 / 10;
     grid-row: 3 / 9;
-    background-color: white;
+    background-image: url(../img/2_2.jpg);
+    background-size: contain;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.projectthmb2{
+    grid-column: 2 / 10;
+    grid-row: 3 / 9;
+    background-image: url(../img/RD1_3.jpg);
+    background-size: contain;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
 }
 
@@ -78,4 +91,14 @@ position: relative;
 
 .fp-viewing-p2 .projecttext2{
     left: 100px;
+}
+
+.fitimg {
+   
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0 auto;
+
 }
