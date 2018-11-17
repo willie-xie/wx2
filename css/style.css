@@ -11,6 +11,12 @@ html, body {
 body {
    background-image: linear-gradient(to bottom right, #454C4E, #202020);
 }
+
+.h1{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+}
 .intro-thumb {
   display: block;
   height: 25vh;
@@ -62,6 +68,9 @@ position: relative;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+    opacity: 0.2;
+       transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
 }
 
 .projectthmb2{
@@ -72,10 +81,13 @@ position: relative;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+        opacity: 0.2;
+       transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
 }
 
 .projecttext, .projecttext2{
-    width: 200px;
+    width: 40%;
     height: 100px;
     position: absolute;
     bottom: 20px;
@@ -89,10 +101,17 @@ position: relative;
     left: 100px;
 }
 
+.fp-viewing-p1 .projectthmb{
+    opacity: 1;
+}
+
 .fp-viewing-p2 .projecttext2{
     left: 100px;
 }
 
+.fp-viewing-p2 .projectthmb2{
+    opacity: 1;
+}
 .fitimg {
    
     width: 80%;
