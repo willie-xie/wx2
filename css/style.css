@@ -208,19 +208,20 @@ background-image: url(../img/RD1_3.jpg);
 }
 
 .projecttext, .projecttext2{
-    width: 60%;
+    width: 80%;
     height: 20%;
     position: absolute;
-    padding-left: 30px;
-    bottom: 40px;
+    padding-left: 20px;
+    bottom: 30px;
     left: -50px;
-    background-color: rgba(0,0,0,0.2);
+    opacity: 0.1;
    transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
 }
 
 .fp-viewing-p1 .projecttext{
     left: 10px;
+    opacity: 1;
 }
 
 .fp-viewing-p1 .projectthmb{
@@ -231,6 +232,7 @@ background-image: url(../img/RD1_3.jpg);
 
 .fp-viewing-p2 .projecttext2{
     left: 10px;
+    opacity: 1;
 }
 
 .fp-viewing-p2 .projectthmb2{
