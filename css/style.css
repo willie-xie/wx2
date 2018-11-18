@@ -14,15 +14,15 @@ body {
 
 h1{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 600;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     color: #fff;
 }
 
 h2{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 100;
     color: rgba(255,255,255,0.5);
 }
@@ -211,15 +211,16 @@ background-image: url(../img/RD1_3.jpg);
     width: 60%;
     height: 20%;
     position: absolute;
+    padding-left: 30px;
     bottom: 50px;
-    left: 0px;
+    left: -30px;
     background-color: rgba(0,0,0,0.2);
    transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
 }
 
 .fp-viewing-p1 .projecttext{
-    left: 50px;
+    left: 30px;
 }
 
 .fp-viewing-p1 .projectthmb{
@@ -229,7 +230,7 @@ background-image: url(../img/RD1_3.jpg);
 }
 
 .fp-viewing-p2 .projecttext2{
-    left: 60px;
+    left: 30px;
 }
 
 .fp-viewing-p2 .projectthmb2{
