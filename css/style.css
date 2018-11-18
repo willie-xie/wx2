@@ -56,6 +56,22 @@ position: fixed;
     color: white;
     font-weight: 800;
 }
+
+@media only screen and (min-width: 968px) {
+    
+  .topnav {
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+    background-color: none;
+    overflow: hidden;
+    z-index: 100;
+margin: auto;
+      right: 9%;
+    top: 5%;}
+    
+      .topnav a{ float: left;}
+}
 .intro-thumb {
   display: block;
   height: 25vh;
