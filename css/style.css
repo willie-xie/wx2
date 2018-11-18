@@ -14,9 +14,47 @@ body {
 
 h1{
     font-family: 'Open Sans', sans-serif;
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: 600;
     color: #fff;
+}
+
+a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topnav {
+position: fixed;
+    margin-top: 5%;
+    background-color: none;
+    overflow: hidden;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #888;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    color: white;
+    font-weight: 800;
 }
 .intro-thumb {
   display: block;
@@ -89,17 +127,18 @@ background-image: url(../img/RD1_3.jpg);
 
 
 .projecttext, .projecttext2{
-    width: 80%;
+    width: 60%;
     height: 20%;
     position: absolute;
     bottom: 50px;
-    left: 10px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
    transition: all 2s ease-out;
     -webkit-transition: all 2s ease-out;
 }
 
 .fp-viewing-p1 .projecttext{
-    left: 60px;
+    left: 50px;
 }
 
 .fp-viewing-p1 .projectthmb{
