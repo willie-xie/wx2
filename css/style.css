@@ -125,7 +125,7 @@ background-image: url(../img/5_2.jpg);
     background-repeat: no-repeat;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
     opacity: 0.2;
-    
+    transform: scale(0.9);
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
 }
@@ -141,7 +141,7 @@ background-image: url(../img/iPS2.324.png);
     opacity: 0.2;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
-    
+    transform: scale(0.9);
 }
 
 .projectthmb3{
@@ -155,7 +155,7 @@ background-image: url(../img/Xpower_Mooncake3.jpg);
     opacity: 0.2;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
-    
+    transform: scale(0.9);
 }
 
 .projectthmb4{
@@ -169,7 +169,7 @@ background-image: url(../img/RD1_3.jpg);
     opacity: 0.2;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
-   
+   transform: scale(0.9);
 }
 
 .projectthmb5{
@@ -183,7 +183,7 @@ background-image: url(../img/RD1_3.jpg);
     opacity: 0.2;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
-
+transform: scale(0.9);
 }
 
 .projectthmb6{
@@ -197,7 +197,7 @@ background-image: url(../img/RD1_3.jpg);
     opacity: 0.2;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
- 
+ transform: scale(0.9);
 }
 
 .projecttext, .projecttext2{
@@ -218,6 +218,7 @@ background-image: url(../img/RD1_3.jpg);
 .fp-viewing-p1 .projectthmb{
     opacity: 1;
     margin: 0;
+    transform: scale(1);
 }
 
 .fp-viewing-p2 .projecttext2{
@@ -226,26 +227,26 @@ background-image: url(../img/RD1_3.jpg);
 
 .fp-viewing-p2 .projectthmb2{
     opacity: 1;
-   
+   transform: scale(1);
 }
 .fp-viewing-p3 .projectthmb3{
     opacity: 1;
-   
+   transform: scale(1);
 }
 
 .fp-viewing-p4 .projectthmb4{
     opacity: 1;
-
+transform: scale(1);
 }
 
 .fp-viewing-p5 .projectthmb5{
     opacity: 1;
-  
+  transform: scale(1);
 }
 
 .fp-viewing-p6 .projectthmb6{
     opacity: 1;
-
+transform: scale(1);
 }
 
 @media only screen and (min-width: 968px) {
