@@ -109,7 +109,7 @@ a.back {
 .section{
 position: relative;
 }
-.project, .project2{
+.project{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(10, auto);
@@ -119,7 +119,21 @@ position: relative;
 .projectthmb{
     grid-column: 2 / 10;
     grid-row: 3 / 9;
-background-image: url(../img/2_2.jpg);
+background-image: url(../img/5_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+    opacity: 0.2;
+    margin: 30px;
+       transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.projectthmb2{
+grid-column: 2 / 10;
+    grid-row: 3 / 9;
+background-image: url(../img/iPS2.324.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,9 +141,24 @@ background-image: url(../img/2_2.jpg);
     opacity: 0.2;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
+    margin: 30px;
 }
 
-.projectthmb2{
+.projectthmb3{
+grid-column: 2 / 10;
+    grid-row: 3 / 9;
+background-image: url(../img/Xpower_Mooncake3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+    opacity: 0.2;
+       transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    margin: 30px;
+}
+
+.projectthmb4{
 grid-column: 2 / 10;
     grid-row: 3 / 9;
 background-image: url(../img/RD1_3.jpg);
@@ -140,8 +169,36 @@ background-image: url(../img/RD1_3.jpg);
     opacity: 0.2;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
+    margin: 30px;
 }
 
+.projectthmb5{
+grid-column: 2 / 10;
+    grid-row: 3 / 9;
+background-image: url(../img/RD1_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+    opacity: 0.2;
+       transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    margin: 30px;
+}
+
+.projectthmb6{
+grid-column: 2 / 10;
+    grid-row: 3 / 9;
+background-image: url(../img/RD1_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+    opacity: 0.2;
+       transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    margin: 30px;
+}
 
 .projecttext, .projecttext2{
     width: 60%;
@@ -150,8 +207,8 @@ background-image: url(../img/RD1_3.jpg);
     bottom: 50px;
     left: 0px;
     background-color: rgba(0,0,0,0.6);
-   transition: all 2s ease-out;
-    -webkit-transition: all 2s ease-out;
+   transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
 }
 
 .fp-viewing-p1 .projecttext{
@@ -160,6 +217,7 @@ background-image: url(../img/RD1_3.jpg);
 
 .fp-viewing-p1 .projectthmb{
     opacity: 1;
+    margin: 0;
 }
 
 .fp-viewing-p2 .projecttext2{
@@ -168,8 +226,27 @@ background-image: url(../img/RD1_3.jpg);
 
 .fp-viewing-p2 .projectthmb2{
     opacity: 1;
+    margin: 0;
+}
+.fp-viewing-p3 .projectthmb3{
+    opacity: 1;
+    margin: 0;
 }
 
+.fp-viewing-p4 .projectthmb4{
+    opacity: 1;
+    margin: 0;
+}
+
+.fp-viewing-p5 .projectthmb5{
+    opacity: 1;
+    margin: 0;
+}
+
+.fp-viewing-p6 .projectthmb6{
+    opacity: 1;
+    margin: 0;
+}
 
 @media only screen and (min-width: 968px) {
     
