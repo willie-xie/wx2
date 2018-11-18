@@ -25,7 +25,7 @@ a{
 
 .topnav {
 position: fixed;
-    margin-top: 5%;
+    margin-top: 7%;
     background-color: none;
     overflow: hidden;
     display: flex;
@@ -43,7 +43,8 @@ position: fixed;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: 100;
 }
 
 /* Change the color of links on hover */
@@ -54,7 +55,7 @@ position: fixed;
 /* Add a color to the active/current link */
 .topnav a.active {
     color: white;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 @media only screen and (min-width: 968px) {
