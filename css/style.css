@@ -96,6 +96,11 @@ body input + label {
   width: 35px;
   z-index: 15;
     -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 body input{
     opacity: 0;
