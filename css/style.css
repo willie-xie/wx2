@@ -5,32 +5,53 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
- 
+  height: 100%;
 }
 
 body {
-   background-image: linear-gradient(to bottom right, #454C4E, #202020);
+   background-image: linear-gradient(to bottom right, #161C1F, #3F4B56);
+   background-repeat: no-repeat;
+   
 }
-
-h1{
-    font-family: 'Open Sans', sans-serif;
+p{
+    font-family: 'Poppins', sans-serif;
     font-size: 1.4em;
     font-weight: 600;
     letter-spacing: 3px;
     color: #fff;
+    display: inline-flex;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color:rgba(255,255,255,1);
 }
 
 h2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
     font-weight: 100;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 4px;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #fff;
 }
 a{
     font-family: 'Open Sans', sans-serif;
     text-decoration: none
 }
-
+.navbar{
+    position: fixed;
+    z-index: 999;
+}
 .topnav {
 position: fixed;
     margin-top: 11%;
@@ -66,22 +87,7 @@ position: fixed;
     font-weight: 700;
 }
 
-body h3 {
-  position: fixed;
-  top: 20px;
-  left: 40px;
-  z-index: 6;
-  font-size: 20px;
-  font-weight: 900;
-  font-family: sans-serif;
-  text-transform: uppercase;
-}
-body h3 > span {
-  text-transform: none;
-  opacity: .5;
-  font-weight: 300;
-  font-size: 12px;
-}
+
 body input + label {
   position: fixed;
   top: 40px;
@@ -125,7 +131,7 @@ body label:hover {
 body input:checked + label span {
   opacity: 1;
   transform: rotate(45deg) translate(0px, -4px);
-
+    background: rgb(100,100,100);
 }
 body input:checked + label span:nth-last-child(2) {
   opacity: 0;
@@ -195,7 +201,7 @@ body input:checked ~ nav > ul > li > a {
         display: none;
     }
   .topnav {
-      position: absolute;
+      position: fixed;
       display: flex;
       justify-content: flex-end;
     background-color: none;
@@ -245,8 +251,7 @@ position: relative;
 }
 
 .fitimg {
-    grid-column: 4 / 6;
-    grid-row: 3 / 9;
+    
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -331,13 +336,13 @@ grid-column: 2 / 10;
 .projecttext, .projecttext2{
     width: 80%;
     height: 20%;
-    position: absolute;
+    position: fixed;
     padding-left: 20px;
     bottom: 30px;
-    left: -50px;
-    opacity: 0.1;
-   transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
+    left: -10px;
+    opacity: 0;
+   transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
 }
 
 .fp-viewing-p1 .projecttext{
@@ -354,11 +359,18 @@ grid-column: 2 / 10;
 .fp-viewing-p2 .projecttext2{
     left: 10px;
     opacity: 1;
+     transition-delay: 0.2s;
+}
+
+.fp-viewing-p2 .projecttext{
+    left: 30px;
+    opacity: 0;
 }
 
 .fp-viewing-p2 .projectthmb2{
     opacity: 1;
    transform: scale(1);
+
 }
 .fp-viewing-p3 .projectthmb3{
     opacity: 1;
@@ -382,8 +394,24 @@ transform: scale(1);
 
 @media only screen and (min-width: 968px) {
     
-    .projectthmb, .projectthmb2{
+    .projectthmb {
     grid-column: 4 / 10;
     grid-row: 3 / 10;
-    
+    }
+    .projectthmb2{
+    grid-column: 4 / 10;
+    grid-row: 3 / 10;
+    }
+    .projectthmb3{
+    grid-column: 4 / 10;
+    grid-row: 3 / 10;
+    }
+    .projectthmb4{
+    grid-column: 4 / 10;
+    grid-row: 3 / 10;
+    }
+    .projectthmb5{
+    grid-column: 4 / 10;
+    grid-row: 3 / 10;
+    }
 }
