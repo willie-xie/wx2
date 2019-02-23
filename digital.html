@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WX</title>
+    <link rel="icon" href="img/thmb.png">
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="navbar">
+<a href="index.html"><div style="position: fixed; top: 33px; left: 35px;z-index: 1020"><h1 style="display: inline;">WILLIE</h1> <h2 style="display: inline">XIE</h2></div></a>
+<input id="burger" type="checkbox" />
+
+<label for="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<nav>    
+  <ul>
+    <li><a href="index.html">PRODUCT</a></li>
+    <li><a href="digital.html">DIGITAL</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+  </ul>  
+</nav>
+ 
+
+
+<div class="topnav">
+  <a href="index.html">Tangible</a>
+  <a class="active" href="digital.html">Digital</a>
+  <a href="about.html">About</a>
+  
+</div></div>
+
+
+   
+    <div id="fullpage">
+        <div class="section active">
+            <div class="project">
+                <div class="projectthmb">
+                <img class="fitimg" src="img/232279_01_shanutec_jjd_xpower_powertrack_1.jpg">
+                </div>
+               
+
+
+            </div>
+
+
+        </div>
+        
+        <div class="section">
+            <div class="project">
+                <div class="projectthmb2">
+                <img class="fitimg" src="img/RD1_3.jpg">
+                </div>
+               
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="project">
+                <div class="projectthmb3">
+                <img class="fitimg" src="img/5_2.jpg">
+                </div>
+                
+            </div>
+        </div>
+        <div class="section">
+            <div class="project">
+                <div class="projectthmb4">
+                <img class="fitimg" src="img/5_2.jpg">
+                </div>
+                
+            </div>
+        </div>
+        <div class="section">
+            <div class="project">
+                <div class="projectthmb5">
+                <img class="fitimg" src="img/5_2.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="project">
+                <div class="projectthmb6">
+
+                </div>
+            </div>
+        </div>
+    
+    </div>
+<!--<div class="projecttext"><h1>
+                    XPOWER <br>VISION</h1>
+                    <div style="margin-top: -5px"><h2>| Product | Packaging </h2></div>
+                </div>
+    <div class="projecttext2"><h1>
+                    basblk <br>asdasd</h1>
+                    <div style="margin-top: -5px"><h2>| asfasft | Packaging </h2></div>
+                </div>-->
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+            //Navigation
+            menu: '#menu',
+            lockAnchors: false,
+            anchors: ['p1', 'p2', 'p3', 'p4', 'p5','p6'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Project1', 'Project2', 'Project3', 'Project4'],
+            showActiveTooltip: false,
+            slidesNavigation: false,
+            slidesNavPosition: 'bottom',
+
+            //Scrolling
+            css3: true,
+            scrollingSpeed: 550,
+            autoScrolling: true,
+            fitToSection: true,
+            fitToSectionDelay: 600,
+            scrollBar: false,
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            continuousVertical: false,
+            continuousHorizontal: false,
+            scrollHorizontally: false,
+            interlockedSlides: false,
+            dragAndMove: false,
+            offsetSections: false,
+            resetSliders: false,
+            fadingEffect: false,
+            normalScrollElements: '#element1, .element2',
+            scrollOverflow: false,
+            scrollOverflowReset: false,
+            scrollOverflowOptions: null,
+            touchSensitivity: 6,
+            normalScrollElementTouchThreshold: 3,
+            bigSectionsDestination: null,
+
+            //Accessibility
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: false,
+
+            //Design
+            controlArrows: true,
+            verticalCentered: true,
+            sectionsColor: [],
+            fixedElements: '#header, .footer',
+            responsiveWidth: 0,
+            responsiveHeight: 0,
+            responsiveSlides: false,
+            parallax: false,
+            parallaxOptions: {
+                type: 'reveal',
+                percentage: 62,
+                property: 'translate'
+            },
+
+            //Custom selectors
+            sectionSelector: '.section',
+            slideSelector: '.slide',
+
+            lazyLoading: true,
+
+            //events
+            onLeave: function(origin, destination, direction) {},
+            afterLoad: function(origin, destination, direction) {},
+            afterRender: function() {},
+            afterResize: function(width, height) {},
+            afterResponsive: function(isResponsive) {},
+            afterSlideLoad: function(section, origin, destination, direction) {},
+            onSlideLeave: function(section, origin, destination, direction) {}
+        });
+    </script>
+
+
+</body>
+
+</html>
