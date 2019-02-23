@@ -285,8 +285,8 @@ grid-column: 1 / 11;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
     opacity: 0.2;
     transform: scale(0.95);
-       transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
+       transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
    display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -297,8 +297,8 @@ grid-column: 2 / 10;
     grid-row: 3 / 9;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
     opacity: 0.2;
-       transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
+       transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
     transform: scale(0.95);
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -312,7 +312,7 @@ grid-column: 2 / 10;
     opacity: 0.2;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
-    transform: scale(0.9);
+    transform: scale(0.95);
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -326,7 +326,7 @@ grid-column: 2 / 10;
     opacity: 0.2;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
-   transform: scale(0.9);
+   transform: scale(0.95);
 }
 
 .projectthmb5{
@@ -339,7 +339,7 @@ grid-column: 2 / 10;
     opacity: 0.2;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
-transform: scale(0.9);
+transform: scale(0.95);
 }
 
 .projectthmb6{
@@ -352,15 +352,15 @@ grid-column: 2 / 10;
     opacity: 0.2;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
- transform: scale(0.9);
+ transform: scale(0.95);
 }
 
 .projecttext, .projecttext2{
     width: 80%;
     height: 20%;
-    position: absolute;
+    position: relative;
     padding-left: 20px;
-    bottom: 30px;
+    bottom: 200px;
     left: -10px;
     opacity: 0;
    transition: all 0.5s ease-out;
@@ -436,11 +436,7 @@ transform: scale(1);
     grid-column: 4 / 10;
     grid-row: 3 / 10;
     }
-    .fitimg {
-display: block;
-  width: 100%;
-  height: 100%;
-    object-fit: cover;
+
    
 
 }
