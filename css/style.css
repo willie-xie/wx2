@@ -6,12 +6,13 @@ html, body {
     right: 0;
     bottom: 0;
   height: 100%;
+    
 }
 
 body {
    background-image: linear-gradient(to bottom right, #161C1F, #3F4B56);
    background-repeat: no-repeat;
-   
+  background-attachment: fixed;
 }
 p{
     font-family: 'Poppins', sans-serif;
@@ -221,7 +222,7 @@ body input:checked ~ nav > ul > li > a {
     overflow: hidden;
     z-index: 100;
 margin: auto;
-      right: 9%;
+      right: 8%;
     top: 5%;}
     
       .topnav a{ float: left;}
