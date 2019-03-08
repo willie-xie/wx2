@@ -457,4 +457,23 @@ grid-column: 1 / 11;
 }
 
 }
+
+.splitgrid > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    
+}
+
+.splitgrid > ul > li{
+  background-color: rgba(0,0,0,0.2);
+min-height: 300px;
+    overflow: hidden;
+}
+
 }
