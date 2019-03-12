@@ -213,6 +213,7 @@ body input:checked ~ nav > ul > li {
 }
 body input:checked ~ nav > ul > li > a {
   text-decoration: none;
+    font-weight: 900;
     display: block;
   transition-delay: .3s;
 }
@@ -294,7 +295,7 @@ position: relative;
 
 .projectthmb{
     grid-column: 2 / 10;
-    grid-row: 3 / 9;
+    grid-row: 3 / 8;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
     opacity: 0.2;
     transform: scale(0.95);
