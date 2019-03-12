@@ -110,6 +110,12 @@ body input + label {
   width: 35px;
   z-index: 15;
     -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 body input{
     opacity: 0;
@@ -183,10 +189,11 @@ body input ~ nav > ul > li {
 }
 body input ~ nav > ul > li > a {
   text-decoration: none;
-  text-transform: uppercase;
   color: white;
-  font-weight: 700;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 2px;
   display: none;
   padding: 30px;
 }
