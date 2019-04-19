@@ -186,13 +186,13 @@ body input ~ nav {
   overflow: hidden;
 }
 body input ~ nav > ul {
-  text-align: center;
+  text-align: right;
   position: absolute;
     padding: 0;
     list-style-type: none;
   top: 30%;
-  left: 20%;
-  right: 20%;
+  
+  right: 10%;
   z-index: 1;
 }
 body input ~ nav > ul > li {
@@ -204,24 +204,24 @@ body input ~ nav > ul > li > a {
   
   color: transparent;
   font-family: 'Poppins', sans-serif;
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 500;
     letter-spacing: 2px;
     -webkit-text-stroke: 0.5px #f9f9f9;
   display: none;
-  padding: 30px;
+  padding: 15px;
 }
 
 body input ~ nav > ul > li > .checked {
   
   color: #fff;
   font-family: 'Poppins', sans-serif;
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 500;
     letter-spacing: 2px;
     -webkit-text-stroke: 0.5px #fff;
   display: none;
-  padding: 30px;
+  padding: 15px;
 }
 body input:checked ~ nav {
   height: 100%;
