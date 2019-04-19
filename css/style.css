@@ -202,8 +202,6 @@ body input ~ nav > ul > li {
 
 body input ~ nav > ul > a {
   opacity: 0;
-  transition: .2s;
-  transition-delay: 0s;
     padding: 12px;
 }
 body input ~ nav > ul > li > a {
@@ -240,7 +238,8 @@ body input:checked ~ nav > ul > li {
 }
 body input:checked ~ nav > ul > a {
   opacity: 1;
-  transition-delay: .4s;
+    transition: 0.3s;
+  transition-delay: .5s;
 }
 body input:checked ~ nav > ul > li > a {
   display: block;
