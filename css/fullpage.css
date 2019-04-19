@@ -198,13 +198,13 @@ html.fp-enabled,
     width: 0;
     cursor: pointer;
 }
-#fp-nav ul li:hover .fp-tooltip,
+/*!#fp-nav ul li:hover .fp-tooltip,
 #fp-nav.fp-show-active a.active + .fp-tooltip {
     -webkit-transition: opacity 0.2s ease-in;
     transition: opacity 0.2s ease-in;
     width: auto;
     opacity: 1;
-}
+}*/
 #fp-nav ul li .fp-tooltip.fp-right {
     right: 30px;
 }

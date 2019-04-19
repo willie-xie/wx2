@@ -67,16 +67,16 @@ p{font-family: 'Poppins', sans-serif;
     z-index: 999;
    
     width: 100%;
-    height: 80px;
+    height: 100px;
     transition: 0.2s ease-in-out;
 }
 .scroll{
     position: fixed;
     z-index: 999;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(25,29,34,0.8);
     width: 100%;
-    height: 80px;
-    box-shadow: 0px 4px 14px #111;
+    height: 100px;
+    box-shadow: 0px 4px 14px #161C1F;
   transition: 0.4s ease-in-out;
 }
 .topnav {
@@ -142,7 +142,7 @@ body label span {
   position: relative;
   
   background: #cdcdcd;
-  border-radius: 5px;
+  border-radius: 0px;
   
   z-index: 15;
   
@@ -191,7 +191,6 @@ body input ~ nav > ul {
     padding: 0;
     list-style-type: none;
   top: 30%;
-  
   right: 10%;
   z-index: 1;
 }
@@ -199,6 +198,13 @@ body input ~ nav > ul > li {
   opacity: 0;
   transition: .5s;
   transition-delay: 0s;
+}
+
+body input ~ nav > ul > a {
+  opacity: 0;
+  transition: .2s;
+  transition-delay: 0s;
+    padding: 12px;
 }
 body input ~ nav > ul > li > a {
   
@@ -226,11 +232,15 @@ body input ~ nav > ul > li > .checked {
 body input:checked ~ nav {
   height: 100%;
   transition-delay: 0s;
-    background: rgba(0,0,0,0.9);
+    background: rgba(12,15,17,0.9);
 }
 body input:checked ~ nav > ul > li {
   opacity: 1;
   transition-delay: .3s;
+}
+body input:checked ~ nav > ul > a {
+  opacity: 1;
+  transition-delay: .4s;
 }
 body input:checked ~ nav > ul > li > a {
   display: block;
@@ -256,7 +266,7 @@ body input:checked ~ nav > ul > li > a {
     z-index: 100;
 margin: auto;
       right: 10%;
-    top: 8%;}
+    top: 6%;}
     
       .topnav a{ float: left;}
 }
