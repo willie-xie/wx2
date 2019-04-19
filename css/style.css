@@ -306,7 +306,7 @@ position: relative;
 
 }
 .project{
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -485,6 +485,13 @@ transform: scale(1);
 }
 
 @media only screen and (min-width: 968px) {
+    
+    .project{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
     
     .projectthmb {
     grid-column: 4 / 10;
