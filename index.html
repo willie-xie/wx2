@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="loading">
 <div class="navbar">
 <!--<a href="index.html"><div style="position: fixed; top: 33px; left: 35px;z-index: 1020"><h1 style="display: inline;">WILLIE</h1> <h2 style="display: inline">XIE</h2></div></a>-->
 <input id="burger" type="checkbox" />
@@ -133,11 +133,15 @@
 
 
 
-
+<script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/fullpage.min.js"></script>
     <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
-
+<script>
+    imagesLoaded( document.querySelectorAll('img'), () => {
+				document.body.classList.remove('loading');
+			});
+    </script>
     <script>
         var myFullpage = new fullpage('#fullpage', {
             //Navigation
