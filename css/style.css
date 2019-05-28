@@ -9,6 +9,9 @@ html, body {
     
 }
 
+.loading{
+    transition: 0.4s ease-in-out;
+}
 .loading::before {
 	content: '';
 	position: fixed;
