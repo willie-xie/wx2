@@ -64,7 +64,7 @@
         
         <div class="section">
             <div class="project">
-                <a href="#" class="projectthmb2">
+                <a href="\page2" class="projectthmb2">
                 <img class="fitimg" src="img/RD1_3.jpg">
                 </a>
                
@@ -141,6 +141,14 @@
     imagesLoaded( document.querySelectorAll('img'), () => {
 				document.body.classList.remove('loading');
 			});
+    </script>
+    <script>
+        var s = sessionStorage.getItem('state');
+        
+    var d = document.getElementById(s);
+d.className += " active";
+        
+        sessionStorage.clear();
     </script>
     <script>
         var myFullpage = new fullpage('#fullpage', {
