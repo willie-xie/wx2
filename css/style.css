@@ -368,7 +368,7 @@ grid-column: 9 / 10;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0,0,0,.6);
 }
 .project{
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
