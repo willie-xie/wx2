@@ -358,8 +358,17 @@ position: relative;
    
 
 }
+.award{
+grid-column: 9 / 10;
+    grid-row: 7 / 8;
+    z-index: 1;
+    height: 60%;
+    width: auto;
+    opacity: 0.8;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0,0,0,.6);
+}
 .project{
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -373,7 +382,6 @@ position: relative;
     transform: scale(0.95);
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
-
 }
 
 .projectthmb2{
@@ -446,7 +454,7 @@ grid-column: 2 / 10;
     opacity: 0;
    transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s ease-out;
-    z-index: -1;
+    z-index: 1;
 }
 
 .fp-viewing-p1 .projecttext{
@@ -599,6 +607,15 @@ transform: scale(1);
    
 
 }
+    .award{
+grid-column: 9 / 10;
+    grid-row: 9 / 10;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    opacity: 0.8;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0,0,0,.6);
+}
 .projecttext, .projecttext2{
     width: 30%;
     position: absolute;
@@ -612,7 +629,7 @@ transform: scale(1);
 }
     h1{
     font-family: 'Poppins', sans-serif;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 600;
     letter-spacing: 3px;
     color:rgba(255,255,255,1);
