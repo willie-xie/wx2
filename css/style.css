@@ -146,12 +146,14 @@ position: fixed;
 
 /* Style the links inside the navigation bar */
 .topnav a {
+    font-family: 'Poppins', sans-serif;
     color: #888;
     text-align: center;
     padding-left: 50px;
     text-decoration: none;
     font-size: 15px;
     font-weight: 700;
+    letter-spacing: 1.5px;
 }
 
 /* Change the color of links on hover */
@@ -359,14 +361,31 @@ a.back {
 position: relative;
 }
 
-.fitimg {
-
+.fitimg{
   width: 100%;
   height: 100%;
     object-fit: cover;
-   
-
+    object-position: center;
+  transition: .7s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
+
+.fitimg:hover{
+  transform: scale(1.1);
+}
+
+.bgimg1, .bgimg2, .bgimg3, .bgimg4{
+    top: 0;
+    left: 8%;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.8s ease-in-out;
+    transform: scale(1.0);
+}
+
 .award{
 grid-column: 8 / 9;
     grid-row: 7 / 8;
@@ -390,6 +409,7 @@ grid-column: 8 / 9;
     transform: scale(0.95);
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
+    overflow: hidden;
 }
 
 .projectthmb2{
@@ -400,7 +420,7 @@ grid-column: 2 / 10;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
     transform: scale(0.95);
-
+    overflow: hidden;
 }
 
 .projectthmb3{
@@ -411,7 +431,7 @@ grid-column: 2 / 10;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
     transform: scale(0.95);
-
+    overflow: hidden;
 }
 
 .projectthmb4{
@@ -423,6 +443,7 @@ grid-column: 2 / 10;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
    transform: scale(0.95);
+    overflow: hidden;
 }
 
 .projectthmb5{
@@ -436,6 +457,7 @@ grid-column: 2 / 10;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
 transform: scale(0.95);
+    overflow: hidden;
 }
 
 .projectthmb6{
@@ -449,6 +471,7 @@ grid-column: 2 / 10;
        transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
  transform: scale(0.95);
+    overflow: hidden;
 }
 
 .projecttext, .projecttext2, .projecttext3, .projecttext4,
@@ -475,7 +498,10 @@ grid-column: 2 / 10;
     margin: 0;
     transform: scale(1);
 }
-
+.fp-viewing-p1 .bgimg1{
+    opacity: 0.03;
+    transform: scale(1);
+}
 .fp-viewing-p2 .projecttext2{
     left: 10px;
     opacity: 1;
@@ -492,6 +518,10 @@ grid-column: 2 / 10;
    transform: scale(1);
 
 }
+.fp-viewing-p2 .bgimg2{
+    opacity:0.03;
+    transform: scale(1);
+}
 
 .fp-viewing-p3 .projecttext3{
     left: 10px;
@@ -507,7 +537,10 @@ grid-column: 2 / 10;
     opacity: 1;
    transform: scale(1);
 }
-
+.fp-viewing-p3 .bgimg3{
+    opacity:0.05;
+    transform: scale(1);
+}
 .fp-viewing-p4 .projecttext4{
     left: 10px;
     opacity: 1;
@@ -522,7 +555,10 @@ grid-column: 2 / 10;
     opacity: 1;
 transform: scale(1);
 }
-
+.fp-viewing-p4 .bgimg4{
+    opacity:0.05;
+    transform: scale(1);
+}
 .fp-viewing-p5 .projecttext5{
     left: 10px;
     opacity: 1;
@@ -566,8 +602,7 @@ transform: scale(1);
     grid-column: 4 / 10;
     grid-row: 3 / 10;
        display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   min-width: 0;
   min-height: 0;
     }
@@ -575,8 +610,7 @@ transform: scale(1);
     grid-column: 4 / 10;
     grid-row: 3 / 10;
         display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   min-width: 0;
   min-height: 0;
     }
@@ -584,8 +618,7 @@ transform: scale(1);
     grid-column: 4 / 10;
     grid-row: 3 / 10;
         display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   min-width: 0;
   min-height: 0;
     }
@@ -593,8 +626,7 @@ transform: scale(1);
     grid-column: 4 / 10;
     grid-row: 3 / 10;
        display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   min-width: 0;
   min-height: 0;
     }
@@ -602,8 +634,7 @@ transform: scale(1);
     grid-column: 4 / 10;
     grid-row: 3 / 10;
        display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   min-width: 0;
   min-height: 0;
     }
@@ -612,6 +643,12 @@ transform: scale(1);
   flex: 0 0 100%;
   min-width: 0;
   object-fit: cover;
+
+	transition: .7s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+}
+      .fitimg:hover {
+  transform: scale(1.1);
    
 
 }
@@ -620,15 +657,15 @@ grid-column: 9 / 10;
     grid-row: 9 / 10;
     z-index: 1;
     height: auto;
-        padding-left: 40px;
+    padding-left: 40px;
     width: 60%;
     opacity: 1;
     
 }
 .projecttext, .projecttext2{
-    width: 30%;
+    width: 20%;
     position: absolute;
-    padding-left: 10%;
+    padding-left: 20%;
     bottom: 9%;
     left: -10px;
     opacity: 0;
