@@ -375,10 +375,9 @@ position: relative;
 
 .bgimg1, .bgimg2, .bgimg3, .bgimg4{
     top: 0;
-    left: 8%;
     position: fixed;
     height: 100%;
-    width: 100%;
+    width: 170%;
     object-fit: cover;
     opacity: 0;
     z-index: -1;
@@ -499,7 +498,7 @@ grid-column: 2 / 10;
     transform: scale(1);
 }
 .fp-viewing-p1 .bgimg1{
-    opacity: 0.03;
+    opacity: 0.1;
     transform: scale(1);
 }
 .fp-viewing-p2 .projecttext2{
@@ -519,7 +518,7 @@ grid-column: 2 / 10;
 
 }
 .fp-viewing-p2 .bgimg2{
-    opacity:0.03;
+    opacity:0.1;
     transform: scale(1);
 }
 
@@ -538,7 +537,7 @@ grid-column: 2 / 10;
    transform: scale(1);
 }
 .fp-viewing-p3 .bgimg3{
-    opacity:0.05;
+    opacity:0.1;
     transform: scale(1);
 }
 .fp-viewing-p4 .projecttext4{
@@ -649,7 +648,12 @@ transform: scale(1);
 }
       .fitimg:hover {
   transform: scale(1.1);
-   
+}
+    .bgimg1, .bgimg2, .bgimg3, .bgimg4{
+    
+    height: 140%;
+    width: 120%;
+    object-fit: cover;
 
 }
     .award{
