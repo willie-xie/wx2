@@ -5,7 +5,8 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-  height: 100vh;
+  height: 100%;
+    overflow: auto;
     
 }
 
@@ -52,6 +53,7 @@ html, body {
 }
 
 body {
+    position: absolute;
    background-image: linear-gradient(to bottom right, #161C1F, #3F4B56);
    background-repeat: no-repeat;
   background-attachment: fixed;
