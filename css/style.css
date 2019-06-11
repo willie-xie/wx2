@@ -55,7 +55,6 @@ body {
    background-image: linear-gradient(to bottom right, #161C1F, #3F4B56);
    background-repeat: no-repeat;
   background-attachment: fixed;
-    overflow: hidden;
 }
 ::-webkit-scrollbar { width: 0 !important }
 p{
