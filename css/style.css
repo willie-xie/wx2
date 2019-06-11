@@ -55,6 +55,7 @@ body {
    background-image: linear-gradient(to bottom right, #161C1F, #3F4B56);
    background-repeat: no-repeat;
   background-attachment: fixed;
+    overflow: hidden;
 }
 ::-webkit-scrollbar { width: 0 !important }
 p{
@@ -698,7 +699,6 @@ h2{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   grid-gap: 1rem;
-    max-width: 1200px;
     margin: 0 auto;
     list-style-type: none;
     overflow: hidden;
@@ -708,7 +708,7 @@ h2{
 
 .splitgrid > ul > li{
   background-color: rgba(0,0,0,0.2);
-min-height: 300px;
+height: 100vh;
     overflow: hidden;
 }
 
