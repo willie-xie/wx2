@@ -53,7 +53,7 @@ html, body {
 }
 
 body {
-    position: absolute;
+   
    background-image: linear-gradient(to bottom right, #161C1F, #3F4B56);
    background-repeat: no-repeat;
   background-attachment: fixed;
