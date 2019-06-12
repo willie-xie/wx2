@@ -6,7 +6,7 @@ html, body {
     right: 0;
     bottom: 0;
   height: 100%;
-    overflow: auto;
+    
     
 }
 
@@ -57,6 +57,7 @@ body {
    background-image: linear-gradient(to bottom right, #161C1F, #3F4B56);
    background-repeat: no-repeat;
   background-attachment: fixed;
+    overflow: auto;
 }
 ::-webkit-scrollbar { width: 0 !important }
 p{
