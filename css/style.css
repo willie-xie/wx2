@@ -75,13 +75,7 @@ p{
     font-weight: 100;
     letter-spacing: 3px;
     color: rgba(255,255,255,0.7);
-    display: inline-flex;
-position: fixed; 
-    top: 33px; 
-    left: 10%;
-    z-index: 1020;
-}
-
+    display: inline-flex;}
 
 
 h1{
@@ -603,19 +597,6 @@ transform: scale(1);
 }
 
 @media only screen and (min-width: 968px) {
-    
-    .logo1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4em;
-    font-weight: 100;
-    letter-spacing: 3px;
-    color: rgba(255,255,255,0.7);
-    display: inline-flex;
-position: fixed; 
-    top: 40px; 
-    left: 10%;
-    z-index: 1020;
-}
     
     .project{
     height: 100vh;
