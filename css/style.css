@@ -612,7 +612,7 @@ transform: scale(1);
     color: rgba(255,255,255,0.7);
     display: inline-flex;
 position: fixed; 
-    top: 43px; 
+    top: 40px; 
     left: 10%;
     z-index: 1020;
 }
