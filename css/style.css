@@ -132,9 +132,9 @@ h6{
     font-size: 0.9em;
     font-weight: 100;
     letter-spacing: 1px;
-    color: #fff;
+    color:rgba(255,255,255,0.8);
     line-height: 0px;
-    font-style: italic;
+
 }
 a{
     font-family: 'Open Sans', sans-serif;
