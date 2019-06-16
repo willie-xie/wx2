@@ -100,6 +100,7 @@ h3{
     letter-spacing: 2px;
     color: #fff;
     opacity: 0.5;
+    padding: 0;
 }
 h4{
     font-family: 'Poppins', sans-serif;
@@ -618,6 +619,7 @@ transform: scale(1);
 .gmask{
     -webkit-mask-image: linear-gradient(to top, transparent 0%, black 75%);
   mask-image: linear-gradient(to left, transparent 0%, black 75%);
+    height: 50vh;
 }
 
 @media only screen and (min-width: 968px) {
@@ -701,7 +703,7 @@ grid-column: 9 / 10;
     .gmask{
     -webkit-mask-image: linear-gradient(to left, transparent 0%, black 75%);
   mask-image: linear-gradient(to left, transparent 0%, black 75%);
-}
+        height: 100vh;}
     
 .projecttext, .projecttext2, .projecttext3, .projecttext4, .projecttext5, .projecttext6{
     width: 40%;
@@ -742,12 +744,16 @@ h2{
         margin-bottom: 50px;
         
 }
+    
+    .cv{
+    margin-top: 100px
+}
+    
 }
 
 .splitgrid > ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-  grid-gap: 1rem;
     margin: 0 auto;
     list-style-type: none;
     overflow: hidden;
@@ -756,12 +762,15 @@ h2{
 }
 
 .splitgrid > ul > li{
-  background-color: rgba(0,0,0,0.2);
-height: 100vh;
+
+height: auto;
     overflow: hidden;
 }
 
-
+.cv{
+    
+    padding: 20px 0px 0px 80px;
+}
 
 .button1 {
     display: inline-block;
