@@ -10,6 +10,15 @@ html, body {
     
 }
 
+a{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .loading{
     transition-delay: 0.4s;
     transition: 0.4s ease-in-out;
@@ -104,8 +113,8 @@ h3{
 }
 h4{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 700;
+    font-size: 1em;
+    font-weight: 500;
     letter-spacing: 1px;
     color: #fff;
    
@@ -125,6 +134,7 @@ h6{
     letter-spacing: 1px;
     color: #fff;
     line-height: 0px;
+    font-style: italic;
 }
 a{
     font-family: 'Open Sans', sans-serif;
@@ -769,7 +779,7 @@ height: auto;
 
 .cv{
     
-    padding: 20px 0px 0px 10%;
+    padding: 20px 0px 0px 40px;
 }
 
 .button1 {
