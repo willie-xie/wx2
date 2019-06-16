@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WX</title>
+    <title>Willie Xie</title>
     <link rel="icon" href="img/thmb.png">
     <!-- CSS FILES -->
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
@@ -15,7 +15,7 @@
 
 <body>
 <div class="navbar">
-<a href="index.html"><div style="position: fixed; top: 33px; left: 35px;z-index: 1020"><h1 style="display: inline;">WILLIE</h1> <h2 style="display: inline">XIE</h2></div></a>
+<a href="/"><div class="logo1">WILLIE XIE</div></a>
 <input id="burger" type="checkbox" />
 
 <label for="burger">
@@ -26,9 +26,9 @@
 
 <nav>    
   <ul>
-    <li><a href="/">PRODUCT</a></li>
+    <li><a href="/">TANGIBLE</a></li>
     <li><a href="/digital" class="checked">DIGITAL</a></li>
-    <li><a href="/about" style="padding-bottom: 40%;">ABOUT</a></li>
+    <li><a href="/about" style="padding-bottom: 30%;">ABOUT</a></li>
     <a href="tel:+8613122324885"><img src="img/Asset%202.svg" style="height: 20px"></a>
       <a href="mailto:xie.willie@gmail.com"><img src="img/Asset%201.svg" style="height: 20px"></a>
       <a href="https://www.linkedin.com/in/williexie"><img src="img/Asset%203.svg" style="height: 20px"></a>
@@ -38,40 +38,45 @@
 
 
 <div class="topnav">
-  <a href="index.html">Tangible</a>
-  <a class="active" href="digital.html">Digital</a>
-  <a href="about.html">About</a>
+  <a href="\">TANGIBLE</a>
+  <a class="active" href="\digital">DIGITAL</a>
+  <a href="\about">ABOUT</a>
   
 </div></div>
 
 
    
     <div id="fullpage">
-        <div class="section active">
+        <div id="section1" class="section">
             <div class="project">
-                <a href="#" class="projectthmb">
-                <img class="fitimg" src="img/232279_01_shanutec_jjd_xpower_powertrack_1.jpg">
+                <a href="\vision" class="projectthmb">
+                <img class="fitimg" src="img/5_6.png">
                 </a>
-               
-
-
             </div>
 
 
         </div>
         
-        <div class="section">
+        <div id="section2" class="section">
             <div class="project">
-                <a href="#" class="projectthmb2">
-                <img class="fitimg" src="img/RD1_3.jpg">
+                <a href="\page2" class="projectthmb2">
+                <img class="fitimg" src="img/aria4.png">
                 </a>
                
             </div>
         </div>
         
-        <div class="section">
+        <div id="section3" class="section">
             <div class="project">
                 <a href="#" class="projectthmb3">
+                <img class="fitimg" src="img/drift_wrist3.png">
+                </a>
+    
+            </div>
+        </div>
+        <div id="section4" class="section">
+            <div class="project">
+                <a href="#" class="projectthmb4">
                 <img class="fitimg" src="img/5_2.jpg">
                 </a>
                 
@@ -81,34 +86,43 @@
     
     </div>
 <div class="projecttext"><h1>
-                    XPOWER VISION</h1>
-                    <div style="margin-top: -10px"><h2>| Product | Packaging </h2></div>
+                    XPOWER</h1> <h5>VISION</h5>
+                    <div style="margin-top: -5px"><h2>| PROJECT LEAD | PROTOTYPING</h2></div>
                 </div>
     <div class="projecttext2"><h1>
-                    ARIA Air Purifier</h1>
-                    <div style="margin-top: -15px"><h2>| asfasft | Packaging </h2></div>
+                    ARIA</h1> <h5>AIR PURIFIER</h5>
+                    <div style="margin-top: -5px"><h2>| Product | Concept  </h2></div>
                 </div>
     <div class="projecttext3"><h1>
-                    ARIA Air Purifier</h1>
-                    <div style="margin-top: -15px"><h2>| asfasft | Packaging </h2></div>
+                    DRIFT</h1> <h5>CAMERA MOUNT</h5>
+                    <div style="margin-top: -15px"><h2>| Product | Packaging </h2></div>
+                </div>
+    <div class="projecttext4"><h1>
+                    Drift Camera Wrist Mount</h1>
+                    <div style="margin-top: -15px"><h2>| Engineering | Product </h2></div>
                 </div>
 
-
-
-
-
-
-
+    <img class="bgimg1" src="img/5_6.png">
+<img class="bgimg2" src="img/aria4.png">
+<img class="bgimg3" src="img/drift_wrist3.png">
 
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/fullpage.min.js"></script>
     <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
 
     <script>
+        var s = sessionStorage.getItem('state');
+        
+    var d = document.getElementById(s);
+d.className += " active";
+        
+        sessionStorage.clear();
+    </script>
+    <script>
         var myFullpage = new fullpage('#fullpage', {
             //Navigation
             menu: '#menu',
-            lockAnchors: false,
+            lockAnchors: true,
             anchors: ['p1', 'p2', 'p3', 'p4', 'p5','p6'],
             navigation: true,
             navigationPosition: 'right',
@@ -119,7 +133,7 @@
 
             //Scrolling
             css3: true,
-            scrollingSpeed: 1000,
+            scrollingSpeed: 700,
             autoScrolling: true,
             fitToSection: true,
             fitToSectionDelay: 600,

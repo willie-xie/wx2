@@ -99,8 +99,9 @@ h3{
     font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
     font-weight: 300;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #fff;
+    opacity: 0.5;
 }
 h4{
     font-family: 'Poppins', sans-serif;
@@ -108,6 +109,7 @@ h4{
     font-weight: 700;
     letter-spacing: 1px;
     color: #fff;
+   
 }
 h5{
     font-family: 'Poppins', sans-serif;
@@ -116,6 +118,15 @@ h5{
     letter-spacing: 2px;
     color:rgba(255,255,255,1);
     display: inline;
+}
+h6{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 0px;
 }
 a{
     font-family: 'Open Sans', sans-serif;
@@ -695,10 +706,10 @@ grid-column: 9 / 10;
   mask-image: linear-gradient(to left, transparent 0%, black 75%);
 }
     
-.projecttext, .projecttext2, .projecttext3{
-    width: 30%;
+.projecttext, .projecttext2, .projecttext3, .projecttext4, .projecttext5, .projecttext6{
+    width: 40%;
     position: absolute;
-    padding-left: 10%;
+    padding-left: 20%;
     text-align: left;
     bottom: 9%;
     left: -10px;
@@ -710,9 +721,10 @@ grid-column: 9 / 10;
     h1{
     font-family: 'Poppins', sans-serif;
     font-size: 4em;
-    font-weight: 600;
+    font-weight: 100;
     letter-spacing: 3px;
-    color:rgba(255,255,255,1);
+    color:rgba(255,255,255,0);
+        -webkit-text-stroke: 0.5px #f9f9f9;
 }
 
 h2{
@@ -721,6 +733,17 @@ h2{
     font-weight: 100;
     color: rgba(255,255,255,0.8);
     letter-spacing: 2px;
+}
+    h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color:rgba(255,255,255,1);
+    display: block;
+        margin-top: 0;
+        margin-bottom: 50px;
+        
 }
 }
 
