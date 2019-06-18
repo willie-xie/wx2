@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="loading">
 <div class="navbar">
 <a href="/"><div class="logo1">WILLIE XIE</div></a>
 <input id="burger" type="checkbox" />
@@ -135,15 +135,14 @@
 <img class="bgimg4" src="img/pandora_p1.png">
 
 <script type="text/javascript" src="js/fullpage.min.js"></script>
-<!--<script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>-->
+<script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
 
 
-
-<!--<script>
-    imagesLoaded( document.querySelectorAll('img'), () => {
+<script>
+    imagesLoaded('#section1', () => {
 				document.body.classList.remove('loading');
 			});
-    </script>-->
+    </script>
     <script>
         var s = sessionStorage.getItem('state');
         
@@ -217,7 +216,7 @@ d.className += " active";
             sectionSelector: '.section',
             slideSelector: '.slide',
 
-            lazyLoading: false,
+            lazyLoading: true,
 
             //events
             onLeave: function(origin, destination, direction) {},
