@@ -17,6 +17,7 @@ a{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .loading{
@@ -424,11 +425,11 @@ position: relative;
 }
 
 .award{
-grid-column: 8 / 9;
+grid-column: 8 / 10;
     grid-row: 7 / 8;
     z-index: 1;
     height: auto;
-    width: 150%;
+    width: 70px;
 
 }
 .project{
