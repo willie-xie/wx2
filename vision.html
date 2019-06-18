@@ -48,8 +48,11 @@
 </div></div>
 
 <img class="headerimg" src="img/5_6.png">
-
-    <video class="vid" src="img/vision.mp4" loop muted playsinline uk-video="autoplay: inview"></video>
+<div id="lottie1" style="height: 400px; width: 800px"></div>
+    <video class="vid" loop muted playsinline uk-video="autoplay: inview">
+    <source src="img/vision.webm" type="video/webm" />
+    <source src="img/vision.mp4" type="video/mp4" />
+    </video>
 <img class="contentimg" src="img/232279_01_shanutec_jjd_xpower_powertrack_1.jpg">
 <img class="contentimg" style="max-height: 500px" src="img/jjd_brochure_comb4.jpg">
 <div class="splitgrid">
@@ -77,6 +80,16 @@
     </script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
+    <script src="js/lottie.js"></script>
+    <script>
+    lottie.loadAnimation({
+  container: document.getElementById('lottie1'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'img/ob2.json' // the path to the animation json
+});
+    </script>
 </body>
 
 </html>
