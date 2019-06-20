@@ -50,7 +50,7 @@
         <div id="section1" class="section">
             <div class="project">
                 <a href="\vision" class="projectthmb">
-                    <div id="lottie1"  style="position: absolute; margin-top: 0%; height: 100% "></div>
+                    <div id="lottie1"  style="position: absolute; margin-top: -10%; width: 100% "></div>
                 </a>
             </div>
 
@@ -60,7 +60,7 @@
         <div id="section2" class="section">
             <div class="project">
                 <a href="\page2" class="projectthmb2">
-                <img class="fitimg" src="img/aria4.png">
+                <div id="lottie2"  style="position: absolute; margin-top: -70%; width: 100% "></div>
                 </a>
                
             </div>
@@ -117,7 +117,14 @@
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: 'img/em3.json' // the path to the animation json
+  path: 'img/em4.json' // the path to the animation json
+});
+        lottie.loadAnimation({
+  container: document.getElementById('lottie2'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'img/zhb2.json' // the path to the animation json
 });
     </script>
     <script>
