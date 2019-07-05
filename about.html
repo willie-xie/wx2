@@ -11,7 +11,7 @@
     <!-- CSS FILES -->
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
 
 </head>
 
@@ -49,10 +49,13 @@
 
 <div class="splitgrid">
     <ul>
-        <li><img class="gmask" style="opacity: 0.15; width: 100%; object-fit: cover" src="img/portrait4.jpg">
-        
-        
-        
+        <li style="position: relative"><img class="gmask" style="opacity: 0.15; width: 100%; object-fit: cover" src="img/portrait4.jpg">
+        <div class="cinfo">
+            <a href="tel:+8613122324885"><img src="img/Asset%202.svg" style="height: 20px; margin-right:20px"><h4 style="display: inline">+86 13122324885</h4></a>
+      <a href="mailto:xie.willie@gmail.com"><img src="img/Asset%201.svg" style="height: 20px; margin-right:20px"><h4 style="display: inline">xie.willie@gmail.com</h4></a>
+      <a href="https://www.linkedin.com/in/williexie"><img src="img/Asset%203.svg" style="height: 20px; margin-right:20px">
+            <h4 style="display: inline">linkedin.com/williexie</h4></a>
+ </div>
         </li>
         
         <li class="cv">
@@ -62,8 +65,8 @@
                 
            <div style="line-height: 0px; padding-top: 60px">     
            <h4 style="display: inline">Product Designer</h4>
-               <h4 style="display: inline; font-weight: 100; font-size: 0.85em; padding-left: 60px">2016 - Present</h4>
-            <h6>Shanutec </h6>
+               <h4 style="display: inline; font-weight: 100; font-size: 0.85em; padding-left: 20px">| 2016 - Present</h4>
+            <h6>Shanutec</h6>
              </div>   
             <div style="line-height: 0px; padding-top: 20px">     
            <h4 style="display: inline">Freelance Designer</h4>
@@ -108,7 +111,9 @@
 </div>
 
 
-
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
     <script>
     window.onscroll = () => {
   const nav = document.querySelector('#navbar');
