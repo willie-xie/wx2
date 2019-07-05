@@ -85,7 +85,10 @@ p{
     left: 10%;
     z-index: 1020;
 }
+.logo1:hover{
+    color: rgba(255,255,255,1);
 
+}
 
 h1{
     font-family: 'Poppins', sans-serif;
@@ -118,7 +121,6 @@ h4{
     font-weight: 500;
     letter-spacing: 1px;
     color: #fff;
-   
 }
 h5{
     font-family: 'Poppins', sans-serif;
@@ -135,7 +137,7 @@ h6{
     letter-spacing: 1px;
     color:rgba(255,255,255,0.8);
     line-height: 0px;
-
+    margin-top: 20px;
 }
 a{
     font-family: 'Open Sans', sans-serif;
@@ -359,7 +361,7 @@ body input:checked ~ nav > ul > li > a {
     z-index: 100;
 margin: auto;
       right: 10%;
-    top: 6%;}
+    top: 40px;}
     
       .topnav a{ float: left;}
 }
@@ -388,13 +390,8 @@ a.back {
   left: 10px;
 }
 
-.barba-container {
-  display: block;
-  
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.cinfo {
+display: none;
 }
 .section{
 position: relative;
@@ -412,7 +409,7 @@ position: relative;
   transform: scale(1.1);
 }
 
-.bgimg1, .bgimg2, .bgimg3, .bgimg4{
+.bgimg1, .bgimg2, .bgimg3, .bgimg4, .bgimg5{
     top: 0;
     position: fixed;
     height: 100%;
@@ -611,7 +608,10 @@ transform: scale(1);
     opacity: 1;
   transform: scale(1);
 }
-
+.fp-viewing-p5 .bgimg5{
+    opacity:0.05;
+    transform: scale(1);
+}
 .fp-viewing-p6 .projecttext6{
     left: 10px;
     opacity: 1;
@@ -635,6 +635,17 @@ transform: scale(1);
 
 @media only screen and (min-width: 968px) {
     
+    .cinfo {
+   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+        .cinfo a{
+   display: block;
+margin: 40px 0px;
+}
     .project{
     height: 100vh;
     display: grid;
@@ -694,10 +705,17 @@ transform: scale(1);
       .fitimg:hover {
   transform: scale(1.1);
 }
-    .bgimg1, .bgimg2, .bgimg3, .bgimg4{
+    .bgimg1, .bgimg2, .bgimg3, .bgimg5{
     
     height: 140%;
     width: 120%;
+    object-fit: cover;
+
+}
+    .bgimg4{
+    
+    height: 130%;
+    width: 110%;
     object-fit: cover;
 
 }
@@ -769,7 +787,6 @@ h2{
     list-style-type: none;
     overflow: hidden;
     padding: 0;
-    
 }
 
 .splitgrid > ul > li{
@@ -778,7 +795,7 @@ height: auto;
     overflow: hidden;
 }
 
-.cv{
+.cv{ 
     
     padding: 20px 0px 0px 40px;
 }
@@ -833,23 +850,29 @@ height: auto;
   transform: scaleX(1);
 }
 .headerimg{
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     object-fit: cover;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 .contentimg{
-    max-height: 300px;
+    height: auto;
     width: 100%;
     object-fit: cover;
-    padding: 5% 5%;
+    padding: 2% 4%;
     margin: 0 auto;
 }
 .vid{
    height: auto;
-    max-width: 100vw;
+    max-width: 100%;
     object-fit: cover;
-    padding: 5% 5%;
+    padding: 2% 4%;
     margin: 0 auto;
 }
-
+.gridimg{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    
+    margin: 0 auto;
+}
