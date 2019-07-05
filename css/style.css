@@ -795,6 +795,21 @@ height: auto;
     overflow: hidden;
 }
 
+.cgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-auto-rows: 1fr;
+margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.cgrid > li > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .cv{ 
     
     padding: 20px 0px 0px 40px;
@@ -859,14 +874,14 @@ height: auto;
     height: auto;
     width: 100%;
     object-fit: cover;
-    padding: 2% 4%;
+ 
     margin: 0 auto;
 }
 .vid{
    height: auto;
     max-width: 100%;
     object-fit: cover;
-    padding: 2% 4%;
+  
     margin: 0 auto;
 }
 .gridimg{
