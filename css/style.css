@@ -460,15 +460,15 @@ opacity: 0;
     transition: all 0.8s ease-in-out;
     transform: scale(1.0);
 }
-}
+
 
 .award{
-grid-column: 8 / 10;
-    grid-row: 7 / 8;
+position: absolute;
+    right: 15px;
+    bottom: 15px;
     z-index: 1;
     height: auto;
     width: 70px;
-
 }
 .project{
     height: 100%;
@@ -781,13 +781,12 @@ top: 12%;
         right: -5%;
 }
     .award{
-grid-column: 9 / 10;
-    grid-row: 9 / 10;
+position: absolute;
+    right: 20px;
+    bottom: 20px;
     z-index: 1;
     height: auto;
-    padding-left: 40px;
-    width: 60%;
-    opacity: 1;
+    width: 100px;
     
 }
     .gmask{
