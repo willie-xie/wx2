@@ -89,7 +89,7 @@ a{
 }
 
 body {
-   background-color: #1e262a;
+   background-image: linear-gradient(to right, #0C1418 , #1e262a);
 }
 ::-webkit-scrollbar { width: 0 !important }
 p{
@@ -183,6 +183,8 @@ p{font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100px;
     transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 .scroll{
     position: fixed;
@@ -190,6 +192,8 @@ p{font-family: 'Poppins', sans-serif;
     background-color: rgba(25,29,34,0.8);
     width: 100%;
     height: 100px;
+    display: flex;
+    align-items: center;
     box-shadow: 0px 4px 14px #161C1F;
   transition: 0.4s ease-in-out;
 }
@@ -368,7 +372,7 @@ body input:checked ~ nav > ul > li > a {
 @media only screen and (min-width: 968px) {
     
     .logo1{
-    top: 40px; 
+    
     left: 10%;
     
 }
@@ -385,12 +389,13 @@ body input:checked ~ nav > ul > li > a {
       position: fixed;
       display: flex;
       justify-content: flex-end;
+      align-items: center;
     background-color: none;
     overflow: hidden;
     z-index: 100;
 margin: auto;
       right: 10%;
-    top: 40px;}
+    }
     
       .topnav a{ float: left;}
 }
@@ -420,7 +425,15 @@ a.back {
 }
 
 .cinfo {
-display: none;
+   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    width: 80%;
+}
+.contact{
+    display: none;
 }
 .section{
 position: relative;
@@ -678,6 +691,12 @@ transform: scale(1);
     height: 50vh;
 }
 
+.emthmb{
+    position: absolute;
+    margin-top: -10%; 
+    width: 100% ;
+}
+
 @media only screen and (min-width: 968px) {
     
     .cinfo {
@@ -686,10 +705,11 @@ transform: scale(1);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+    width: 55%;
 }
         .cinfo a{
    display: block;
-margin: 40px 0px;
+margin: 20px 0px 0px 0px;
 }
     .project{
     height: 100vh;
@@ -774,11 +794,9 @@ margin: 40px 0px;
 }
     .bgimg6{
     
-    height: 100%;
-    width: 100%;
+    height: 140%;
+    width: 110%;
     object-fit: cover;
-top: 12%;
-        right: -5%;
 }
     .award{
 position: absolute;
@@ -794,11 +812,18 @@ position: absolute;
   mask-image: linear-gradient(to left, transparent 0%, black 75%);
         height: 100vh;}
     
-.projecttext, .projecttext2, .projecttext3, .projecttext4, .projecttext5, .projecttext6{
-    width: 30%;
+    .emthmb{
     position: absolute;
-    margin-left: 10%;
-    padding: 4em;
+    margin-top: -3%; 
+    width: 55% ;
+        margin-left: 25%
+}
+    
+.projecttext, .projecttext2, .projecttext3, .projecttext4, .projecttext5, .projecttext6{
+    width: 18%;
+    position: absolute;
+    margin-left: 6%;
+    padding: 3em 3em;
     text-align: left;
     bottom: 10%;
     left: -10px;
@@ -806,45 +831,72 @@ position: absolute;
    transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s ease-out;
     z-index: 1;
-    background-color: rgba(10,18,22,0.5);
+    background-color: rgba(10,18,22,0);
 }
     h1{
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 2px;
-    color:rgba(255,255,255,0.3);
+    color:rgba(255,255,255,0.7);
+        line-height: 3em;
         
 }
 
 h2{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 100;
     color: rgba(255,255,255,0.8);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
     h5{
     font-family: 'Poppins', sans-serif;
-    font-size: 3em;
-    font-weight: 100;
+    font-size: 3.5em;
+    font-weight: 700;
     letter-spacing: 2px;
     color:rgba(255,255,255,1);
+        line-height: 1.2em;
     display: block;
         margin-top: 0;
         margin-bottom: 50px;
-        
+     
+}
+    h7{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:rgba(255,255,255,0.3);
+    display: inline;
+     
+}
+    h8{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:rgba(255,255,255,1);
+    display: inline;
+     
 }
     
     .cv{
-    margin-top: 100px
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+width: 99%;
 }
-
+    .contact{
+        display: block;
+    }
 }
 
 .splitgrid > ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     margin: 0 auto;
     list-style-type: none;
     overflow: hidden;
@@ -937,7 +989,7 @@ margin: 0 auto;
     height: 60vh;
     width: 100%;
     object-fit: cover;
-    opacity: 0.05;
+    opacity: 0.1;
 }
 .contentimg{
     height: auto;
