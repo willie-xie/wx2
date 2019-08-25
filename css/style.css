@@ -89,7 +89,7 @@ a{
 }
 
 body {
-   background-image: linear-gradient(to right, #0C1418 , #1e262a);
+   background-color: #0C1418;
 }
 ::-webkit-scrollbar { width: 0 !important }
 p{
@@ -865,7 +865,7 @@ h2{
     font-family: 'Poppins', sans-serif;
     font-size: 1em;
     font-weight: 400;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.95);
     letter-spacing: 0.5px;
 }
     h5{
