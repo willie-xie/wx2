@@ -864,9 +864,9 @@ position: absolute;
 h2{
     font-family: 'Poppins', sans-serif;
     font-size: 1em;
-    font-weight: 100;
+    font-weight: 400;
     color: rgba(255,255,255,0.8);
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
     h5{
     font-family: 'Poppins', sans-serif;
@@ -1008,7 +1008,9 @@ margin: 0 auto;
     height: 60vh;
     width: 100%;
     object-fit: cover;
-    opacity: 0.1;
+    opacity: 0.3;
+        -webkit-mask-image: linear-gradient(to top, transparent 0%, black 90%);
+  mask-image: linear-gradient(to top, transparent 0%, black 90%);
 }
 .contentimg{
     height: auto;
