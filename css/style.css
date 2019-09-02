@@ -130,7 +130,7 @@ h1{
 h2{
     font-family: 'Poppins', sans-serif;
     font-size: 0.8em;
-    font-weight: 100;
+    font-weight: 400;
     color: rgba(255,255,255,0.6);
     letter-spacing: 1px;
 }
@@ -183,7 +183,22 @@ h6{
     letter-spacing: 1px;
     color:rgba(255,255,255,1);
     display: inline;
-     
+    
+        
+}
+h9{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 1px;
+}
+h10{display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+    font-weight: 100;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 1px;
 }
 a{
     font-family: 'Open Sans', sans-serif;
@@ -897,6 +912,20 @@ h2{
     color:rgba(255,255,255,1);
     display: inline;
      
+}
+    h9{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: rgba(255,255,255);
+    letter-spacing: 1px;
+}
+h10{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    font-weight: 100;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 1px;
 }
     
     .cv{
