@@ -965,8 +965,8 @@ margin: 0 auto;
     padding: 0;
     list-style: none;
     grid-column-gap: 0%;
-    grid-row-gap: 1em;
-    margin-bottom: 1em;
+    grid-row-gap: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .cgrid > li > img{
@@ -976,7 +976,7 @@ margin: 0 auto;
 }
 @media only screen and (min-width: 968px) {
     .cgrid {
-    grid-column-gap: 1em;
+    grid-column-gap: 0.5em;
 }
 }
 .cv{ 
@@ -1046,7 +1046,7 @@ margin: 0 auto;
     width: 100%;
     object-fit: cover;
     margin: 0 auto;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 .contentimg2{
     height: auto;
