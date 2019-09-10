@@ -1038,7 +1038,7 @@ margin: 0 auto;
     height: 60vh;
     width: 100%;
     object-fit: cover;
-    opacity: 0.3;
+    opacity: 0.8;
         -webkit-mask-image: linear-gradient(to top, transparent 0%, black 90%);
   mask-image: linear-gradient(to top, transparent 0%, black 90%);
 }
