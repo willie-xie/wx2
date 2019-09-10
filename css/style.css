@@ -460,7 +460,7 @@ a.back {
 .cinfo {
    display: block;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
     width: 80%;
@@ -955,7 +955,7 @@ width: 99%;
 
 height: auto;
     overflow: hidden;
-    min-height: 70vh;
+    min-height: 55vh;
 }
 
 .cgrid {
